@@ -9,27 +9,27 @@ class GameScene extends Phaser.Scene {
         this.cameras.main.height = 256
         this.cameras.main.width = 336
         this.cameras.main.setPosition(32,32)
-        this.load.image('bullet', '../assets/bullet.png')
-        this.load.image('particle', '../assets/particle.png')
-        this.load.image('tiles', '../assets/Tilemap/purple.png')
-        this.load.tilemapTiledJSON('map', '../scripts/purpleMapObjectsVideo.json')
+        this.load.image('bullet', '/finalFiles/assets/bullet.png')
+        this.load.image('particle', '/finalFiles/assets/particle.png')
+        this.load.image('tiles', '/finalFiles/assets/Tilemap/purple.png')
+        this.load.tilemapTiledJSON('map', '/finalFiles/scripts/purpleMapObjectsVideo.json')
 
-        this.load.spritesheet('characters', '../assets/characters.png', {
+        this.load.spritesheet('characters', '/finalFiles/assets/characters.png', {
             frameWidth: 16,
             frameHieght: 16
         })
-        this.load.spritesheet('unicorn', '../assets/sprites/unicorn32.png', {
+        this.load.spritesheet('unicorn', '/finalFiles/assets/sprites/unicorn32.png', {
             frameWidth: 32,
             frameHieght: 32
         })
 
-        this.load.spritesheet('pickups', '../assets/sprites/pickupsSmall.png', {
+        this.load.spritesheet('pickups', '/finalFiles/assets/sprites/pickupsSmall.png', {
             frameWidth: 16,
             frameHieght: 16
         })
 
-        this.load.atlas('tpOnline', '../assets/spritesheetV2.png', '../assets/spritesheetV2.json')
-        this.load.atlas('monsters', '../assets/sprites/monsters.png', '../assets/sprites/monsters.json')
+        this.load.atlas('tpOnline', '/finalFiles/assets/spritesheetV2.png', '/finalFiles/assets/spritesheetV2.json')
+        this.load.atlas('monsters', '/finalFiles/assets/sprites/monsters.png', '/finalFiles/assets/sprites/monsters.json')
         this.player
         this.keys
         this.enemy
